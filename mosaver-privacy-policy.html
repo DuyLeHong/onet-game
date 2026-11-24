@@ -30,21 +30,31 @@ th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-ali
 <h1>Chính sách quyền riêng tư của Chi Gọn</h1>
 <p class="meta">Có hiệu lực từ ngày 24/11/2026 · Nhà phát triển: HDP Solutions · Liên hệ: support@hdpsolutions.com</p>
 
-<p>Chi Gọn là ứng dụng sổ thu chi cá nhân. Chính sách này giải thích ứng dụng xử lý những dữ liệu nào, vì sao, và bạn kiểm soát chúng ra sao. Tóm tắt: dữ liệu thu chi của bạn chỉ lưu trên điện thoại của bạn, chúng tôi không có máy chủ lưu dữ liệu đó và không yêu cầu bạn tạo tài khoản.</p>
+<p>Chi Gọn là ứng dụng sổ thu chi cá nhân. Chính sách này giải thích ứng dụng xử lý những dữ liệu nào, vì sao, và bạn kiểm soát chúng ra sao. Tóm tắt: ứng dụng không yêu cầu tài khoản và dữ liệu thu chi lưu trên điện thoại của bạn. Riêng người từng đăng nhập ở phiên bản cũ có dữ liệu trên đám mây; mục 4a giải thích cách dữ liệu đó được chuyển về máy và cách xóa.</p>
 
 <h2>1. Dữ liệu thu chi của bạn</h2>
 <p>Giao dịch, ví, danh mục, ngân sách, mục tiêu, ghi chú và ảnh hóa đơn bạn nhập được lưu trong bộ nhớ của ứng dụng trên thiết bị. Chúng tôi không gửi, không thu thập và không xem được các dữ liệu này.</p>
 
 <h2>2. Quyền đọc thông báo</h2>
-<p>Nếu bạn bật tính năng tự ghi giao dịch, Chi Gọn xin quyền truy cập thông báo (Notification Access) của Android. Ứng dụng chỉ xử lý thông báo từ các ứng dụng ngân hàng và ví điện tử để nhận ra số tiền, thời gian và nội dung giao dịch, rồi đề xuất giao dịch để bạn xác nhận. Việc xử lý diễn ra hoàn toàn trên thiết bị. Nội dung thông báo không được gửi ra ngoài thiết bị và thông báo của các ứng dụng khác bị bỏ qua. Chi Gọn không đọc tin nhắn SMS và không bao giờ hỏi mật khẩu ngân hàng. Bạn có thể tắt quyền này bất cứ lúc nào trong Cài đặt của Android hoặc trong ứng dụng.</p>
+<p>Nếu bạn bật tính năng tự ghi giao dịch, Chi Gọn xin quyền truy cập thông báo (Notification Access) của Android. Ứng dụng chỉ xử lý thông báo từ các ứng dụng ngân hàng và ví điện tử để nhận ra số tiền, thời gian và nội dung giao dịch, rồi đề xuất giao dịch để bạn xác nhận. Việc xử lý diễn ra hoàn toàn trên thiết bị. Nội dung thông báo không được gửi ra ngoài thiết bị và thông báo của các ứng dụng khác bị bỏ qua. Bạn có thể tắt quyền này bất cứ lúc nào trong Cài đặt của Android hoặc trong ứng dụng.</p>
+<p><b>Nguồn SMS banking (tùy chọn):</b> nếu ngân hàng của bạn báo biến động số dư qua tin nhắn SMS, bạn có thể bật nguồn này. Khi đó ứng dụng xử lý thêm thông báo do ứng dụng tin nhắn hiển thị, theo cùng cách trên thiết bị. Nguồn này tắt sẵn và chỉ hoạt động khi bạn bật. Chi Gọn không xin quyền đọc tin nhắn SMS (READ_SMS), không truy cập hộp thư tin nhắn, và không bao giờ hỏi mật khẩu ngân hàng.</p>
 
 <h2>3. Nhập sao kê PDF và file từ ứng dụng khác</h2>
-<p>Khi bạn chọn một file sao kê PDF hoặc file CSV/Excel, ứng dụng đọc file đó trên thiết bị để tách giao dịch. Mật khẩu file PDF (nếu có) chỉ dùng để mở file trong lần nhập đó và không được lưu lại. File không được tải lên bất kỳ máy chủ nào.</p>
+<p>Khi bạn chọn một file sao kê PDF hoặc file CSV/Excel, ứng dụng đọc file đó trên thiết bị để tách giao dịch. Mật khẩu file PDF (nếu có) chỉ dùng để mở file trong lần nhập đó và không được lưu lại, kể cả trên thiết bị. File không được tải lên bất kỳ máy chủ nào.</p>
 
 <h2>4. Sao lưu</h2>
 <ul>
 <li><b>Bộ nhớ máy:</b> bản sao lưu được lưu vào thư mục bạn chọn.</li>
 <li><b>Google Drive:</b> nếu bạn kết nối, ứng dụng dùng quyền Google Drive giới hạn (drive.file), tức là chỉ truy cập các file sao lưu do chính Chi Gọn tạo. Bản sao lưu nằm trong Google Drive của bạn, chúng tôi không truy cập được. Việc dùng Google Drive tuân theo <a href="https://policies.google.com/privacy">Chính sách quyền riêng tư của Google</a>.</li>
+</ul>
+
+<h2>4a. Người dùng phiên bản cũ có tài khoản</h2>
+<p>Phiên bản trước của ứng dụng cho phép đăng nhập và lưu dữ liệu trên máy chủ đám mây (Google Firebase: Authentication và Cloud Firestore). Phiên bản hiện tại không tạo tài khoản mới. Nếu bạn từng đăng nhập ở phiên bản cũ:</p>
+<ul>
+<li>Lần đầu mở phiên bản mới, ứng dụng đọc dữ liệu cũ của bạn từ Firestore một lần và sao chép về thiết bị. Sau đó ứng dụng không còn đồng bộ dữ liệu lên đám mây.</li>
+<li>Trong Cài đặt có nút <b>Xóa tài khoản cũ và dữ liệu đám mây</b>. Nút này xóa vĩnh viễn tài khoản cũ cùng toàn bộ dữ liệu của bạn trên Firestore. Dữ liệu đã sao chép về thiết bị vẫn ở trên thiết bị.</li>
+<li>Bạn cũng có thể yêu cầu xóa tài khoản và dữ liệu đám mây bằng cách gửi email từ địa chỉ đã đăng nhập tới support@hdpsolutions.com. Chúng tôi xóa trong vòng 30 ngày và báo lại cho bạn.</li>
+<li>Dữ liệu trên đám mây của tài khoản cũ được giữ cho đến khi bạn xóa. Chúng tôi chỉ dùng dữ liệu này để chuyển về thiết bị của bạn.</li>
 </ul>
 
 <h2>5. Quảng cáo (Google AdMob)</h2>
@@ -60,14 +70,14 @@ th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-ali
 <tr><td>Đăng thông báo</td><td>Hiện giao dịch chờ xác nhận, nhắc nhở</td></tr>
 <tr><td>Camera / chọn ảnh</td><td>Đính kèm ảnh hóa đơn (tùy chọn)</td></tr>
 <tr><td>Sinh trắc học</td><td>Khóa ứng dụng bằng vân tay (tùy chọn)</td></tr>
-<tr><td>Internet</td><td>Quảng cáo, báo cáo sự cố, sao lưu Google Drive</td></tr>
+<tr><td>Internet</td><td>Quảng cáo, báo cáo sự cố, sao lưu Google Drive, chuyển dữ liệu tài khoản cũ về máy</td></tr>
 </table>
 
 <h2>8. Lưu giữ và xóa dữ liệu</h2>
-<p>Dữ liệu tồn tại trên thiết bị cho đến khi bạn xóa trong ứng dụng hoặc gỡ cài đặt ứng dụng. Bản sao lưu trên bộ nhớ máy hoặc Google Drive do bạn quản lý và xóa. Vì chúng tôi không lưu dữ liệu của bạn, chúng tôi không có dữ liệu thu chi nào để xóa thay bạn.</p>
+<p>Dữ liệu tồn tại trên thiết bị cho đến khi bạn xóa trong ứng dụng hoặc gỡ cài đặt ứng dụng. Bản sao lưu trên bộ nhớ máy hoặc Google Drive do bạn quản lý và xóa. Với người dùng mới, chúng tôi không lưu dữ liệu thu chi nào. Với tài khoản của phiên bản cũ, xem cách xóa ở mục 4a.</p>
 
 <h2>9. Chia sẻ và bán dữ liệu</h2>
-<p>Chúng tôi không bán dữ liệu cá nhân. Ngoài Google AdMob và Firebase Crashlytics như mô tả ở trên, ứng dụng không chia sẻ dữ liệu với bên thứ ba.</p>
+<p>Chúng tôi không bán dữ liệu cá nhân. Ngoài Google AdMob, Firebase Crashlytics và Firebase (với tài khoản cũ) như mô tả ở trên, ứng dụng không chia sẻ dữ liệu với bên thứ ba.</p>
 
 <h2>10. Bảo mật</h2>
 <p>Dữ liệu được lưu trong vùng riêng của ứng dụng mà ứng dụng khác không đọc được. Bạn có thể bật khóa ứng dụng bằng mã PIN hoặc vân tay. Kết nối mạng dùng HTTPS.</p>
@@ -88,21 +98,31 @@ th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-ali
 <h1>ChiGon Privacy Policy</h1>
 <p class="meta">Effective November 24, 2026 · Developer: HDP Solutions · Contact: support@hdpsolutions.com</p>
 
-<p>ChiGon (Chi Gọn) is a personal expense tracker. This policy explains what data the app handles, why, and how you control it. In short: your financial records stay on your phone, we run no server that stores them, and you do not need an account.</p>
+<p>ChiGon (Chi Gọn) is a personal expense tracker. This policy explains what data the app handles, why, and how you control it. In short: the app needs no account and your financial records are stored on your phone. Only people who signed in to the previous version have data in the cloud; section 4a explains how it is moved to your device and how to delete it.</p>
 
 <h2>1. Your financial data</h2>
 <p>Transactions, wallets, categories, budgets, goals, notes and receipt photos you enter are stored in the app's storage on your device. We do not receive, collect or have access to this data.</p>
 
 <h2>2. Notification access</h2>
-<p>If you turn on auto-recording, ChiGon asks for Android Notification Access. The app only processes notifications from banking and e-wallet apps to detect the amount, time and description of a transaction, then suggests it for you to confirm. All processing happens on your device. Notification content never leaves your device, and notifications from other apps are ignored. ChiGon does not read SMS messages and never asks for bank passwords. You can revoke this access at any time in Android Settings or in the app.</p>
+<p>If you turn on auto-recording, ChiGon asks for Android Notification Access. The app only processes notifications from banking and e-wallet apps to detect the amount, time and description of a transaction, then suggests it for you to confirm. All processing happens on your device. Notification content never leaves your device, and notifications from other apps are ignored. You can revoke this access at any time in Android Settings or in the app.</p>
+<p><b>SMS banking source (optional):</b> if your bank sends balance alerts by SMS, you can turn on this source. The app then also processes notifications shown by your messaging app, in the same on-device way. This source is off by default and works only when you turn it on. ChiGon does not request the SMS read permission (READ_SMS), does not access your message inbox, and never asks for bank passwords.</p>
 
 <h2>3. PDF statements and files from other apps</h2>
-<p>When you pick a PDF bank statement or a CSV/Excel file, the app reads it on your device to extract transactions. A PDF password, if any, is used only to open the file during that import and is not stored. Files are not uploaded to any server.</p>
+<p>When you pick a PDF bank statement or a CSV/Excel file, the app reads it on your device to extract transactions. A PDF password, if any, is used only to open the file during that import and is not stored, not even on your device. Files are not uploaded to any server.</p>
 
 <h2>4. Backups</h2>
 <ul>
 <li><b>Device storage:</b> backups are saved to a folder you choose.</li>
 <li><b>Google Drive:</b> if you connect it, the app uses the limited drive.file scope, so it can only access backup files ChiGon created. Backups live in your own Google Drive and we cannot access them. Use of Google Drive is subject to the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+</ul>
+
+<h2>4a. Users of the previous version with an account</h2>
+<p>The previous version of the app allowed sign-in and stored data in the cloud (Google Firebase Authentication and Cloud Firestore). The current version does not create new accounts. If you signed in to the previous version:</p>
+<ul>
+<li>The first time you open the new version, the app reads your old data from Firestore once and copies it to your device. After that, the app no longer syncs data to the cloud.</li>
+<li>Settings has a <b>Delete old account and cloud data</b> button. It permanently deletes your old account and all your data in Firestore. Data already copied to your device stays on your device.</li>
+<li>You can also request deletion of your account and cloud data by emailing support@hdpsolutions.com from the address you signed in with. We delete it within 30 days and confirm to you.</li>
+<li>Cloud data of old accounts is kept until you delete it. We use it only to move it to your device.</li>
 </ul>
 
 <h2>5. Advertising (Google AdMob)</h2>
@@ -118,14 +138,14 @@ th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-ali
 <tr><td>Post notifications</td><td>Show transactions to confirm and reminders</td></tr>
 <tr><td>Camera / photo picker</td><td>Attach receipt photos (optional)</td></tr>
 <tr><td>Biometrics</td><td>Fingerprint app lock (optional)</td></tr>
-<tr><td>Internet</td><td>Ads, crash reports, Google Drive backup</td></tr>
+<tr><td>Internet</td><td>Ads, crash reports, Google Drive backup, moving old account data to your device</td></tr>
 </table>
 
 <h2>8. Retention and deletion</h2>
-<p>Data stays on your device until you delete it in the app or uninstall the app. Backups on device storage or Google Drive are managed and deleted by you. Because we do not store your data, we hold no financial records to delete on your behalf.</p>
+<p>Data stays on your device until you delete it in the app or uninstall the app. Backups on device storage or Google Drive are managed and deleted by you. For new users we store no financial records. For accounts from the previous version, see section 4a for deletion.</p>
 
 <h2>9. Sharing and sale</h2>
-<p>We do not sell personal data. Apart from Google AdMob and Firebase Crashlytics as described above, the app shares no data with third parties.</p>
+<p>We do not sell personal data. Apart from Google AdMob, Firebase Crashlytics and Firebase (for old accounts) as described above, the app shares no data with third parties.</p>
 
 <h2>10. Security</h2>
 <p>Data is stored in the app's private storage, which other apps cannot read. You can enable an app lock with PIN or fingerprint. Network connections use HTTPS.</p>
